@@ -1,6 +1,7 @@
 * {
     margin: 0;
     border: 0;
+    list-style: none;
 }
 
 img {
@@ -14,8 +15,7 @@ nav {
     grid-auto-columns: 25%;
 }
 
-ul {
-    list-style: none;
+#menu {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
