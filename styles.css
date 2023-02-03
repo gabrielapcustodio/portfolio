@@ -8,11 +8,17 @@ img {
     width: 12rem;
 }
 
+nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-auto-columns: 25%;
+}
+
 ul {
     list-style: none;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 #about-me {
