@@ -7,3 +7,13 @@ img {
     border-radius: 50%;
     width: 12rem;
 }
+
+
+#about-me {
+    border: 2px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 0 5rem 0;
+}
