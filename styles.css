@@ -8,6 +8,9 @@ img {
     width: 12rem;
 }
 
+ul {
+    list-style: none;
+}
 
 #about-me {
     border: 2px solid red;
