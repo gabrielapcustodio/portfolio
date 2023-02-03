@@ -2,3 +2,8 @@
     margin: 0;
     border: 0;
 }
+
+img {
+    border-radius: 50%;
+    width: 12rem;
+}
