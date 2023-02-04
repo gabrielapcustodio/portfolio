@@ -1,9 +1,10 @@
 :root {
-    --color1: #FAFAFA;
-    --color2: #7A7A7A;
-    --color3: #FAAFAF;
-    --color4: #7A5656;
-    --color5: #C7C7C7;
+    --color1: #eac9e6;
+    --color2: #84556e;
+    --color3: #532b39;
+    --color4: #1f1e20;
+    --color5: #273535;
+    --color6: #f5f5f5;
 }
 
 * {
@@ -14,7 +15,7 @@
 }
 
 body {
-    background-color: #f3f0f3;
+    background-color: var(--color6);
 }
 
 img {
@@ -27,16 +28,20 @@ nav {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-auto-columns: 25%;
     margin: 1rem 0 1rem 0;
+    color: var(--color3);
+    font-weight: 500;
 }
 
 h1 {
     margin: 1rem 0 0.5rem 0;
     font-size: 2.3rem;
+    color: var(--color2);
 }
 
 h2 {
     margin: 0.5rem 0 1rem 0;
     font-weight: 500;
+    color: var(--color2);
 }
 
 #menu {
@@ -57,6 +62,8 @@ h2 {
     padding: 0;
     display: flex;
     flex-direction: row;
+    color: var(--color3);
+    font-weight: 500;
 }
 
 #contact-me > li {
