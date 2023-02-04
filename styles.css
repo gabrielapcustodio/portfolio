@@ -94,6 +94,7 @@ a {
 .retranca {
     font-size: 0.9rem;
     font-weight: 500;
+    padding-bottom: 0.3rem;
 }
 
 .titulo {
@@ -109,3 +110,8 @@ a {
     justify-items: center;
     margin: 3rem;
 }
+
+.container {
+    padding: 0.5rem;
+}
+
