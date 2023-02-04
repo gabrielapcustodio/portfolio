@@ -105,4 +105,7 @@ a {
 .cards-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-auto-flow: row;
+    justify-items: center;
+    margin: 3rem;
 }
