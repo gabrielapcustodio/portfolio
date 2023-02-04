@@ -1,3 +1,11 @@
+:root {
+    --color1: #FAFAFA;
+    --color2: #7A7A7A;
+    --color3: #FAAFAF;
+    --color4: #7A5656;
+    --color5: #C7C7C7;
+}
+
 * {
     margin: 0;
     border: 0;
@@ -6,7 +14,7 @@
 }
 
 body {
-    background-color: rgb(243, 240, 243);
+    background-color: #f3f0f3;
 }
 
 img {
