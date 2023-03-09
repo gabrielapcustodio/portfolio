@@ -19,11 +19,14 @@ body {
 }
 
 nav {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-auto-columns: 25%;
-    margin: 1rem 0 1rem 0;
+    height: 4rem;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
     color: var(--color3);
+    background-color: var(--color6);
     font-weight: 500;
 }
 
@@ -47,7 +50,13 @@ h2 {
 #menu {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content:space-around;
+}
+
+#menu > li {
+    padding: 1.5rem;
+    margin: 0;
+    align-items: center;
 }
 
 #about-me {
@@ -137,15 +146,15 @@ li > a::after {
     padding: 0.5rem;
 }
 
-#titulo-de-pagina {
+#link-para-reportagens {
     margin: 0;
-    padding-top: 2rem;
+    padding-top: 5rem;
     text-align: center;
 }
 
 
 /* sobre.html */
-.descricao{
+.descricao {
     padding: 4rem;
     display: flex;
     flex-direction: row;
@@ -215,8 +224,10 @@ li > a::after {
     margin-top: 0.5rem;
 }
 
-#titulo-sobre {
+#link-para-final {
     text-align: center;
+    padding-top: 5rem;
+    margin-top: 5rem;
     margin-bottom: 2rem;
 }
 
