@@ -1,346 +1,344 @@
 :root {
-    --color1: #eac9e6;
-    --color2: #84556e;
-    --color3: #532b39;
-    --color4: #1f1e20;
-    --color5: #273535;
-    --color6: #f5f5f5;
+  --color1: #eac9e6;
+  --color2: #84556e;
+  --color3: #532b39;
+  --color4: #1f1e20;
+  --color5: #273535;
+  --color6: #f5f5f5;
 }
 
 * {
-    margin: 0;
-    border: 0;
-    list-style: none;
-    font-family: 'Cabin', sans-serif;
+  margin: 0;
+  border: 0;
+  list-style: none;
+  font-family: "Cabin", sans-serif;
 }
 
 body {
-    background-color: var(--color6);
+  background-color: var(--color6);
 }
 
 nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    color: var(--color3);
-    font-weight: 500;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  color: var(--color3);
+  font-weight: 500;
 }
 
 h1 {
-    margin: 1rem 0 0.5rem 0;
-    font-size: 2.3rem;
-    color: var(--color2);
+  margin: 1rem 0 0.5rem 0;
+  font-size: 2.3rem;
+  color: var(--color2);
 }
 
 h2 {
-    margin: 0.5rem 0 1rem 0;
-    font-weight: 500;
-    color: var(--color2);
+  margin: 0.5rem 0 1rem 0;
+  font-weight: 500;
+  color: var(--color2);
 }
 
 #photo {
-    border-radius: 25%;
-    width: 12rem;
+  border-radius: 25%;
+  width: 12rem;
 }
 
 #menu {
+  background-color: var(--color6);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+#menu > li {
+  padding: 1.5rem;
+  margin: 0;
+  align-items: center;
+}
+
+#about-me {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem 0 5rem 0;
+  margin-top: 5rem;
+}
+
+#contact-me {
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  color: var(--color3);
+  font-weight: 500;
+}
+
+#contact-me > li {
+  margin: 0 1rem 0 1rem;
+}
+
+#nome-profissao {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.redes:after {
+  border-bottom: 3px solid var(--color2);
+  content: "";
+  display: block;
+  margin: 0.15em auto 0;
+  transition: width 250ms ease-in-out 0s;
+  width: 0;
+}
+.redes:hover:after {
+  transition: width 100ms ease-in-out 0s;
+  width: 100%;
+}
+
+a:hover {
+  box-shadow: 0 3px 0 0 var(--color2);
+}
+/* reportagens.html */
+
+a {
+  text-decoration: none;
+  color: var(--color3);
+}
+
+li > a::after {
+  text-decoration: none;
+  color: var(--color2);
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border-radius: 5px;
+  width: 13rem;
+  margin: 1rem;
+}
+
+.card-img {
+  border-radius: 5px 5px 0 0;
+  width: 100%;
+}
+
+.retranca {
+  font-size: 0.9rem;
+  font-weight: 500;
+  padding-bottom: 0.3rem;
+}
+
+.titulo {
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-align: left;
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-auto-flow: row;
+  justify-items: center;
+  margin: 3rem;
+}
+
+.container {
+  padding: 0.5rem;
+}
+
+#link-para-reportagens {
+  margin: 0;
+  padding-top: 5rem;
+  text-align: center;
+}
+
+/* sobre.html */
+.descricao {
+  padding: 4rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.experiencia-profissional {
+  width: 48%;
+}
+
+.universidade {
+  margin-bottom: 10px;
+}
+
+.experiencia-profissional,
+.formacao {
+  text-align: center;
+}
+
+.exp {
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+.experiencia-profissional > h3 {
+  margin-bottom: 0.8rem;
+}
+
+.experiencia-profissional > h4 {
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.fotos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.fotos > img {
+  height: 15rem;
+  border-radius: 5%;
+}
+
+.fotos > img:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.skills {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.skills > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+}
+
+.skills > div > img {
+  width: 3em;
+}
+
+.skills > div > label {
+  margin-top: 0.5rem;
+}
+
+#link-para-final {
+  text-align: center;
+  padding-top: 5rem;
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+}
+
+#skills-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 2rem;
+  padding-right: 4rem;
+  padding-left: 4rem;
+}
+
+/* media queries */
+
+@media (max-width: 900px) {
+  #menu {
     background-color: var(--color6);
     position: fixed;
     top: 0;
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content:space-around;
-}
-
-#menu > li {
-    padding: 1.5rem;
-    margin: 0;
-    align-items: center;
-}
-
-#about-me {
+    justify-content: space-evenly;
+  }
+  .cards-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-flow: row;
+    justify-items: center;
+    margin: 3rem;
+  }
+  .fotos {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .fotos > img {
+    height: 9rem;
+  }
+  .experiencia-profissional {
+    width: 100%;
+  }
+  .descricao {
+    padding: 4rem;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 5rem 0 5rem 0;
-    margin-top: 5rem;
-}
-
-#contact-me {
-    padding: 0;
-    display: flex;
-    flex-direction: row;
-    color: var(--color3);
-    font-weight: 500;
-}
-
-#contact-me > li {
-    margin: 0 1rem 0 1rem;
-}
-
-#nome-profissao{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-}
-
-.redes:after {
-    
-    border-bottom: 3px solid var(--color2);
-    content: "";
-    display: block;
-    margin: 0.15em auto 0;
-    transition: width 250ms ease-in-out 0s;
-    width: 0;
-}
-.redes:hover:after {
-    transition: width 100ms ease-in-out 0s;
-    width: 100%;
-}
-
-
-a:hover {
-    box-shadow: 0 3px 0 0 var(--color2);
-}
-/* reportagens.html */
-
-a {
-    text-decoration: none;
-    color: var(--color3);
-}
-
-li > a::after {
-    text-decoration: none;
-    color: var(--color2);
-}
-
-.card {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
-    border-radius: 5px;
-    width: 13rem;
-    margin: 1rem;
-}
-
-.card-img {
-    border-radius: 5px 5px 0 0;
-    width: 100%;
-}
-
-.retranca {
-    font-size: 0.9rem;
-    font-weight: 500;
-    padding-bottom: 0.3rem;
-}
-
-.titulo {
-    font-size: 1.2rem;
-    font-weight: 700;
-    text-align:left;
-}
-
-.cards-container {
+    justify-content: space-between;
+  }
+  .experiencia-profissional,
+  #skills-container {
+    margin-top: -2rem;
+  }
+  .formacao {
+    margin-top: 2rem;
+  }
+  .skills {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-auto-flow: row;
     justify-items: center;
+  }
+}
+
+@media (max-width: 415px) {
+  #menu {
+    background-color: var(--color6);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .cards-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-flow: row;
+    justify-items: center;
     margin: 3rem;
-}
-
-.container {
-    padding: 0.5rem;
-}
-
-#link-para-reportagens {
-    margin: 0;
-    padding-top: 5rem;
-    text-align: center;
-}
-
-
-/* sobre.html */
-.descricao {
+  }
+  .fotos {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .fotos > img {
+    height: 9rem;
+  }
+  .experiencia-profissional {
+    width: 100%;
+  }
+  .descricao {
     padding: 4rem;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
-}
-
-.experiencia-profissional {
-    width: 48%;
-}
-
-.universidade {
-    margin-bottom: 10px;
-}
-
-.experiencia-profissional, .formacao {
-    text-align: center;
-}
-
-.exp {
-    margin-bottom: 5px;
-    margin-top: 5px;
-}
-
-.experiencia-profissional > h3 {
-    margin-bottom: 0.8rem;
-}
-
-.experiencia-profissional > h4 {
-    margin-top: 1.5rem;
-    margin-bottom: 0.5rem;
-}
-
-.fotos {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-.fotos > img {
-    height: 15rem;
-    border-radius: 5%;
-}
-
-.fotos > img:hover {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-}
-
-.skills{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-.skills > div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 1rem;
-    margin-bottom: 3rem;
-}
-
-.skills > div > img {
-    width: 3em;
-}
-
-.skills > div > label {
-    margin-top: 0.5rem;
-}
-
-#link-para-final {
-    text-align: center;
-    padding-top: 5rem;
-    margin-top: 5rem;
-    margin-bottom: 2rem;
-}
-
-#skills-container {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    margin-bottom: 2rem;
-    padding-right: 4rem;
-    padding-left: 4rem;
-}
-
-
-
-/* media queries */
-
-@media (max-width: 768px) {
-    #menu {
-        background-color: var(--color6);
-        position: fixed;
-        top: 0;
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content:space-evenly;
-    }
-    .cards-container {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-auto-flow: row;
-        justify-items: center;
-        margin: 3rem;
-    }
-    .fotos {
-        padding-left: 1rem;
-        padding-right: 1rem;
-    }
-    .fotos > img {
-        height: 9rem;
-    }
-    .experiencia-profissional {
-        width: 100%;
-    }
-    .descricao {
-        padding: 4rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-    .experiencia-profissional, #skills-container {
-        margin-top: -2rem;
-    }
-    .formacao {
-        margin-top: 2rem;
-    }
-    .skills {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-auto-flow: row;
-        justify-items: center;
-    }
   }
-
-  @media (max-width: 415px) {
-    #menu {
-        background-color: var(--color6);
-        position: fixed;
-        top: 0;
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content:space-evenly;
-    }
-    .cards-container {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-auto-flow: row;
-        justify-items: center;
-        margin: 3rem;
-    }
-    .fotos {
-        padding-left: 1rem;
-        padding-right: 1rem;
-    }
-    .fotos > img {
-        height: 9rem;
-    }
-    .experiencia-profissional {
-        width: 100%;
-    }
-    .descricao {
-        padding: 4rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-    .experiencia-profissional, #skills-container {
-        margin-top: -2rem;
-    }
-    .formacao {
-        margin-top: 2rem;
-    }
-    .skills {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-auto-flow: row;
-        justify-items: center;
-    }
+  .experiencia-profissional,
+  #skills-container {
+    margin-top: -2rem;
   }
+  .formacao {
+    margin-top: 2rem;
+  }
+  .skills {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-auto-flow: row;
+    justify-items: center;
+  }
+}
