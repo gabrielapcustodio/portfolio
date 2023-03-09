@@ -80,6 +80,12 @@ h2 {
     margin: 0 1rem 0 1rem;
 }
 
+#nome-profissao{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
 .redes:after {
     
     border-bottom: 3px solid var(--color2);
@@ -240,3 +246,101 @@ li > a::after {
     padding-right: 4rem;
     padding-left: 4rem;
 }
+
+
+
+/* media queries */
+
+@media (max-width: 768px) {
+    #menu {
+        background-color: var(--color6);
+        position: fixed;
+        top: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content:space-evenly;
+    }
+    .cards-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-auto-flow: row;
+        justify-items: center;
+        margin: 3rem;
+    }
+    .fotos {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .fotos > img {
+        height: 9rem;
+    }
+    .experiencia-profissional {
+        width: 100%;
+    }
+    .descricao {
+        padding: 4rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .experiencia-profissional, #skills-container {
+        margin-top: -2rem;
+    }
+    .formacao {
+        margin-top: 2rem;
+    }
+    .skills {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-auto-flow: row;
+        justify-items: center;
+    }
+  }
+
+  @media (max-width: 415px) {
+    #menu {
+        background-color: var(--color6);
+        position: fixed;
+        top: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content:space-evenly;
+    }
+    .cards-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-auto-flow: row;
+        justify-items: center;
+        margin: 3rem;
+    }
+    .fotos {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .fotos > img {
+        height: 9rem;
+    }
+    .experiencia-profissional {
+        width: 100%;
+    }
+    .descricao {
+        padding: 4rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .experiencia-profissional, #skills-container {
+        margin-top: -2rem;
+    }
+    .formacao {
+        margin-top: 2rem;
+    }
+    .skills {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-auto-flow: row;
+        justify-items: center;
+    }
+  }
