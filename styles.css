@@ -40,7 +40,7 @@ h2 {
 }
 
 #photo {
-    border-radius: 50%;
+    border-radius: 25%;
     width: 12rem;
 }
 
@@ -70,12 +70,34 @@ h2 {
     margin: 0 1rem 0 1rem;
 }
 
+.redes:after {
+    
+    border-bottom: 3px solid var(--color2);
+    content: "";
+    display: block;
+    margin: 0.15em auto 0;
+    transition: width 250ms ease-in-out 0s;
+    width: 0;
+}
+.redes:hover:after {
+    transition: width 100ms ease-in-out 0s;
+    width: 100%;
+}
 
 
+a:hover {
+    box-shadow: 0 3px 0 0 var(--color2);
+}
 /* reportagens.html */
 
 a {
     text-decoration: none;
+    color: var(--color3);
+}
+
+li > a::after {
+    text-decoration: none;
+    color: var(--color2);
 }
 
 .card {
@@ -119,4 +141,90 @@ a {
     margin: 0;
     padding-top: 2rem;
     text-align: center;
+}
+
+
+/* sobre.html */
+.descricao{
+    padding: 4rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.experiencia-profissional {
+    width: 48%;
+}
+
+.universidade {
+    margin-bottom: 10px;
+}
+
+.experiencia-profissional, .formacao {
+    text-align: center;
+}
+
+.exp {
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.experiencia-profissional > h3 {
+    margin-bottom: 0.8rem;
+}
+
+.experiencia-profissional > h4 {
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.fotos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.fotos > img {
+    height: 15rem;
+    border-radius: 5%;
+}
+
+.fotos > img:hover {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.skills{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.skills > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+}
+
+.skills > div > img {
+    width: 3em;
+}
+
+.skills > div > label {
+    margin-top: 0.5rem;
+}
+
+#titulo-sobre {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+#skills-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 2rem;
+    padding-right: 4rem;
+    padding-left: 4rem;
 }
