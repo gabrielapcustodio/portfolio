@@ -444,4 +444,8 @@ li > a::after {
   #skills-container {
     margin-top: 5rem;
   }
+  #about-me{
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
 }
