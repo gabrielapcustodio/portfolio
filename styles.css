@@ -191,37 +191,28 @@ li > a::after {
 
 /* sobre.html */
 .descricao {
-  padding: 4rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-flow: row;
+  justify-items: center;
+  margin: 0;
+  padding: 0;
+  text-align: center;
 }
-
+/*
 .experiencia-profissional {
   width: 48%;
 }
+*/
 
-.universidade {
-  margin-bottom: 10px;
-}
-
-.experiencia-profissional,
-.formacao {
-  text-align: center;
+.descricao > section {
+  margin: 3rem;
+  padding: 2rem;
 }
 
 .exp {
-  margin-bottom: 5px;
-  margin-top: 5px;
-}
-
-.experiencia-profissional > h3 {
-  margin-bottom: 0.8rem;
-}
-
-.experiencia-profissional > h4 {
-  margin-top: 1.5rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
+  margin-top: 0.5rem;
 }
 
 .fotos {
@@ -261,6 +252,26 @@ li > a::after {
   margin-top: 0.5rem;
 }
 
+.premiacoes {
+  margin-bottom: 2rem;
+  padding: 0;
+  text-align: center;
+}
+
+.premiacoes > #container-premios {
+  margin: 0;
+}
+
+#container-premios > .premio {
+  margin: 3rem;
+}
+
+#container-premios {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
 #link-para-final {
   text-align: center;
   padding-top: 5rem;
@@ -288,44 +299,15 @@ li > a::after {
     flex-direction: row;
     justify-content: space-around;
   }
-  .card {
-    width: 20rem;
-  }
-  .cards-container {
+  .cards-container{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-auto-flow: row;
     justify-items: center;
-    margin: 3rem;
+    margin: 1rem;
   }
-  .fotos {
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
-  .fotos > img {
-    height: 9rem;
-  }
-  .experiencia-profissional {
-    width: 100%;
-  }
-  .descricao {
-    padding: 4rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-  .experiencia-profissional,
-  #skills-container {
-    margin-top: -2rem;
-  }
-  .formacao {
-    margin-top: 2rem;
-  }
-  .skills {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-auto-flow: row;
-    justify-items: center;
+  .card {
+    width: 20rem;
   }
 }
 
@@ -344,7 +326,10 @@ li > a::after {
     grid-template-columns: 1fr 1fr;
     grid-auto-flow: row;
     justify-items: center;
-    margin: 3rem;
+    margin: 1rem;
+  }
+  .card {
+    width: 18rem;
   }
   .fotos {
     padding-left: 1rem;
@@ -353,27 +338,46 @@ li > a::after {
   .fotos > img {
     height: 9rem;
   }
-  .experiencia-profissional {
-    width: 100%;
-  }
   .descricao {
-    padding: 4rem;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
+    margin: 0;
+    padding: 0 9rem 0 9rem;
   }
-  .experiencia-profissional,
-  #skills-container {
-    margin-top: -2rem;
+  .descricao > section {
+    margin: 1rem 0 1rem 0;
+    padding: 0;
   }
-  .formacao {
-    margin-top: 2rem;
+  .premiacoes {
+    margin: 0;
+    padding: 0 8rem 0 8rem;
+  }
+  #container-premios {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  #container-premios > .premio {
+    margin: 1rem 0 1rem 0;
+    padding: 0;
   }
   .skills {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-auto-flow: row;
     justify-items: center;
+  }
+  #skills-container {
+    margin-top: 5rem;
+  }
+  #contact-me{
+    font-size: 11px;
+    font-weight: 700;
+  }
+  #about-me{
+    padding-top: 17rem;
+    padding-bottom: 17rem;
   }
 }
 
@@ -395,7 +399,10 @@ li > a::after {
     grid-template-columns: 1fr;
     grid-auto-flow: row;
     justify-items: center;
-    margin: 3rem;
+    margin: 1rem;
+  }
+  .card {
+    width: 15rem;
   }
   .fotos {
     padding-left: 1rem;
@@ -404,27 +411,38 @@ li > a::after {
   .fotos > img {
     height: 9rem;
   }
-  .experiencia-profissional {
-    width: 100%;
-  }
   .descricao {
-    padding: 4rem;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
+    margin: 0;
+    padding: 0 3rem 0 3rem;
   }
-  .experiencia-profissional,
-  #skills-container {
-    margin-top: -2rem;
+  .descricao > section {
+    margin: 1rem 0 1rem 0;
+    padding: 0;
   }
-  .formacao {
-    margin-top: 2rem;
+  .premiacoes {
+    margin: 0;
+    padding: 0 3rem 0 3rem;
+  }
+  #container-premios {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  #container-premios > .premio {
+    margin: 1rem 0 1rem 0;
+    padding: 0;
   }
   .skills {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-auto-flow: row;
     justify-items: center;
+  }
+  #skills-container {
+    margin-top: 5rem;
   }
   #contact-me{
     font-size: 11px;
