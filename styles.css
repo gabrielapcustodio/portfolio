@@ -381,7 +381,7 @@ li > a::after {
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 414px) {
   #menu {
     background-color: var(--color6);
     position: fixed;
@@ -426,6 +426,12 @@ li > a::after {
     margin: 0;
     padding: 0 3rem 0 3rem;
   }
+  .skills {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-auto-flow: row;
+    justify-items: center;
+  }
   #container-premios {
     display: flex;
     flex-direction: column;
@@ -435,20 +441,7 @@ li > a::after {
     margin: 1rem 0 1rem 0;
     padding: 0;
   }
-  .skills {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-auto-flow: row;
-    justify-items: center;
-  }
   #skills-container {
     margin-top: 5rem;
-  }
-  #contact-me{
-    font-size: 11px;
-    font-weight: 700;
-  }
-  #about-me{
-    padding: 5rem;
   }
 }
