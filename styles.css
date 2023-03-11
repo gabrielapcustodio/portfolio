@@ -179,6 +179,10 @@ li > a::after {
   filter: invert(40%) sepia(70%) saturate(1200%) hue-rotate(305deg) brightness(65%) contrast(60%);
 }
 
+.networks-icons:hover {
+  transform: translateY(3px);
+}
+
 #link-para-reportagens {
   margin: 0;
   padding-top: 5rem;
