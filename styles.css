@@ -93,10 +93,10 @@ h2 {
 }
 
 .redes:after {
-  border-bottom: 3px solid var(--color2);
+  border-bottom: 1px solid var(--color2);
   content: "";
   display: block;
-  margin: 0.15em auto 0;
+  margin: 0 0 0.2em 0;
   transition: width 250ms ease-in-out 0s;
   width: 0;
 }
@@ -135,10 +135,6 @@ li > a::after {
 .card-img {
   border-radius: 5px 5px 0 0;
   width: 100%;
-}
-
-.card-img:hover {
-  
 }
 
 .retranca {
