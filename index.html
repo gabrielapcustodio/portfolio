@@ -17,10 +17,10 @@
     <main>
       <nav>
         <ul id="menu">
-          <li><a href="#about-me">início</a></li>
-          <li><a href="#link-para-reportagens">reportagens</a></li>
-          <li><a href="#link-para-final">sobre</a></li>
-          <li><a href="#link-para-skills">skills</a></li>
+          <li><a class="menu-link" href="#about-me">início</a></li>
+          <li><a class="menu-link" href="#link-para-reportagens">reportagens</a></li>
+          <li><a class="menu-link" href="#link-para-final">sobre</a></li>
+          <li><a class="menu-link" href="#link-para-skills">skills</a></li>
         </ul>
       </nav>
       <section id="about-me">
@@ -82,12 +82,92 @@
       </section>
       <h1 id="link-para-reportagens">Reportagens</h1>
       <section class="cards-container">
+        
+        <a class="image-link"
+        href="https://www.opovo.com.br/coronavirus/2022/02/12/em-41-dias-175-pessoas-morreram-em-casa-por-covid-19-em-13-cidades-do-ceara.html"
+        target="_blank">
         <div class="card">
-          <img
+          <img src="img/capa_obitos_domiciliares-02.jpg"
+          class="card-img" alt="parte de trás de ambulância"
+          />
+          <div class="container">
+            <p class="retranca">Cotidiano • Covid-19</p>
+            <p class="titulo">Em 41 dias, 175 pessoas morreram em casa por Covid em 13 cidades do CE
+            </p>
+          </div>
+        </div>
+      </a>
+
+        <div class="card">
+          <a class="image-link"
+                href="https://www.opovo.com.br/noticias/fortaleza/2022/01/28/sindrome-gripal-upas-tem-novo-recorde-mensal-de-atendimentos-media-diaria-apresenta-queda.html"
+                target="_blank"
+                ><img
+            src="img/capa_upas-02.jpg"
+            class="card-img"
+            alt="fachada de uma Unidade de Pronto Atendimento (UPA) de Fortaleza"
+          /></a>
+          <div class="container">
+            <p class="retranca">Cotidiano • Covid-19</p>
+            <p class="titulo">
+              <a
+                href="https://www.opovo.com.br/noticias/fortaleza/2022/01/28/sindrome-gripal-upas-tem-novo-recorde-mensal-de-atendimentos-media-diaria-apresenta-queda.html"
+                target="_blank"
+                >Síndrome gripal: UPAs têm novo recorde mensal, mas
+                média diária cai</a
+              >
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <a class="image-link"
+                href="https://www.opovo.com.br/coronavirus/2022/01/14/corbevax-a-vacina-contra-a-covid-19-desenvolvida-para-a-saude-global.html"
+                target="_blank"
+                ><img
+            src="img/capa_vacinas-02.jpg"
+            class="card-img"
+            alt="parte de trás de ambulância"
+          /></a>
+          <div class="container">
+            <p class="retranca">Saúde • Vacinas</p>
+            <p class="titulo">
+              <a
+                href="https://www.opovo.com.br/coronavirus/2022/01/14/corbevax-a-vacina-contra-a-covid-19-desenvolvida-para-a-saude-global.html"
+                target="_blank"
+                >Corbevax: a vacina contra a Covid-19 desenvolvida para a saúde global</a
+              >
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <a class="image-link"
+                href="https://drive.google.com/file/d/1W8YAIYG6w-4jIK68MNTW7E9WAwTR_N2y/view?usp=share_link"
+                target="_blank"
+                ><img
+            src="img/capa_barbosa-de-freitas-02.jpg"
+            class="card-img"
+            alt="ilustração de Barbosa de Freitas"
+          /></a>
+          <div class="container">
+            <p class="retranca">Memória • Impresso</p>
+            <p class="titulo">
+              <a
+                href="https://drive.google.com/file/d/1W8YAIYG6w-4jIK68MNTW7E9WAwTR_N2y/view?usp=share_link"
+                target="_blank"
+                >Barbosa de Freitas: o romântico e esquecido poeta da luta por liberdade</a
+              >
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <a class="image-link"
+                href="https://mais.opovo.com.br/interativos/cicloviaria-fortaleza/episodio-01.php"
+                target="_blank"
+                ><img
             src="img/capa_malha-cicloviaria-19562967-2.jpg"
             class="card-img"
             alt=""
-          />
+          /></a>
           <div class="container">
             <p class="retranca">Mobilidade urbana • Dados</p>
             <p class="titulo">
@@ -101,11 +181,14 @@
           </div>
         </div>
         <div class="card">
-          <img
+          <a class="image-link"
+                href="https://mais.opovo.com.br/interativos/cicloviaria-fortaleza/episodio-02.php"
+                target="_blank"
+                ><img
             src="img/capa_malha-cicloviaria_17102022-2.jpg"
             class="card-img"
             alt=""
-          />
+          /></a>
           <div class="container">
             <p class="retranca">Mobilidade urbana • Dados</p>
             <p class="titulo">
@@ -119,11 +202,14 @@
           </div>
         </div>
         <div class="card">
-          <img
+          <a class="image-link"
+                href="https://mais.opovo.com.br/interativos/cicloviaria-fortaleza/episodio-03.php"
+                target="_blank"
+                ><img
             src="img/capa_malha-cicloviaria_12122022-2.jpg"
             class="card-img"
             alt=""
-          />
+          /></a>
           <div class="container">
             <p class="retranca">Transparência pública • Dados</p>
             <p class="titulo">
@@ -136,7 +222,10 @@
           </div>
         </div>
         <div class="card">
-          <img src="img/capa_chuvas-18773192-2.jpg" class="card-img" alt="" />
+          <a class="image-link"
+                href="https://mais.opovo.com.br/reportagens-especiais/2022/05/18/grandes-chuvas-em-fortaleza-impactos-e-aprendizados-futuros.html"
+                target="_blank"
+                ><img src="img/capa_chuvas-18773192-2.jpg" class="card-img" alt="" /></a>
           <div class="container">
             <p class="retranca">Mudanças climáticas • Dados</p>
             <p class="titulo">
@@ -149,11 +238,14 @@
           </div>
         </div>
         <div class="card">
-          <img
+          <a class="image-link"
+                href="https://mais.opovo.com.br/reportagens-especiais/2022/04/12/as-multiplas-fortalezas-expressas-em-cancoes.html"
+                target="_blank"
+                ><img
             src="img/capa_fortaleza-296-anos-18520221-2.jpg"
             class="card-img"
             alt=""
-          />
+          /></a>
           <div class="container">
             <p class="retranca">Memória • Dados</p>
             <p class="titulo">
@@ -166,11 +258,14 @@
           </div>
         </div>
         <div class="card">
-          <img
+          <a class="image-link"
+                href="https://mais.opovo.com.br/reportagens-especiais/paulo-freire-100-anos/2021/08/25/paulo-freire-por-que-o-pensador-brasileiro-mais-citado-no-exterior-e-o-mais-polemico-no-pais.html"
+                target="_blank"
+                ><img
             src="img/capa_centenario-paulo-freire-16858230-2.jpg"
             class="card-img"
             alt=""
-          />
+          /></a>
           <div class="container">
             <p class="retranca">Cultura</p>
             <p class="titulo">
@@ -184,11 +279,14 @@
           </div>
         </div>
         <div class="card">
-          <img
+          <a class="image-link"
+                href="https://mais.opovo.com.br/reportagens-especiais/anexacao-messejana-parangaba/2021/10/27/parangaba-e-a-briga-para-manter-a-historia-viva.html"
+                target="_blank"
+                ><img
             src="img/capa_parangaba-17353301-2.jpg"
             class="card-img"
             alt=""
-          />
+          /></a>
           <div class="container">
             <p class="retranca">Memória</p>
             <p class="titulo">
@@ -201,11 +299,14 @@
           </div>
         </div>
         <div class="card">
-          <img
+          <a class="image-link"
+                href="https://mais.opovo.com.br/reportagens-especiais/anexacao-messejana-parangaba/2021/10/27/messejana-de-pacata-a-atrativo-centro-comercial.html"
+                target="_blank"
+                ><img
             src="img/capa_messejana-17353252-2.jpg"
             class="card-img"
             alt=""
-          />
+          /></a>
           <div class="container">
             <p class="retranca">Memória</p>
             <p class="titulo">

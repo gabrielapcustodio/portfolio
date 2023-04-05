@@ -100,12 +100,13 @@ h2 {
   transition: width 250ms ease-in-out 0s;
   width: 0;
 }
+
 .redes:hover:after {
   transition: width 100ms ease-in-out 0s;
   width: 100%;
 }
 
-a:hover {
+.menu-link:hover {
   box-shadow: 0 3px 0 0 var(--color2);
 }
 /* reportagens.html */
@@ -119,6 +120,7 @@ li > a::after {
   text-decoration: none;
   color: var(--color2);
 }
+
 
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
